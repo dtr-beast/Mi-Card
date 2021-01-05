@@ -9,16 +9,31 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.amberAccent,
+        backgroundColor: Colors.green[300],
         body: Column(
           children: <Widget>[
-            Center(
-              child: CircleAvatar(
-                radius: 50.00,
-                backgroundColor: Colors.red,
-                backgroundImage: AssetImage('images/MyPic.jpg')
+            CircleAvatar(
+                radius: 60.00,
+                backgroundImage: AssetImage('images/MyPic.jpg')),
+            Text(
+              'Aditya Sharma',
+              style: TextStyle(
+                fontSize: 40.0,
+                fontFamily: 'Pacifico',
+                color: Colors.blue,
+                fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontSize: 18.0,
+                fontFamily: 'Source Sans Pro',
+                color: Colors.yellow[500],
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
