@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: <Widget>[
             CircleAvatar(
-                radius: 60.00,
-                backgroundImage: AssetImage('images/MyPic.jpg')),
+                radius: 60.00, backgroundImage: AssetImage('images/MyPic.jpg')),
             Text(
               'Aditya Sharma',
               style: TextStyle(
@@ -34,6 +33,58 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            Container(
+              padding: EdgeInsets.all(8.0),
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    size: 35.0,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '+91 845-975-0387',
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      fontFamily: 'Pacifico',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal[900],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(8.0),
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.mail,
+                    size: 35.0,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    'mc5torkpro@gmail.com',
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      fontFamily: 'Pacifico',
+                      fontWeight: FontWeight.bold,
+                      color: Colors.teal[900],
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
